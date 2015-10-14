@@ -1,0 +1,176 @@
+#upload-flow {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .row {
+        height: 100%;
+        margin: 0px;
+    }
+    #upload-area {
+        height: 100%;
+        text-align: center;
+        display: table;
+        padding: 8%;
+        #upload-drop {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 12%;
+            color: #b6b6b6;
+            border-radius: 10px;
+            transition: all 0.4s ease;
+            border: 4px dashed transparent;
+            h4 {
+                color: #b6b6b6;
+            }
+            i {
+                font-size: 4em;
+                margin: 20px;
+            }
+            b {
+                color: #999;
+            }
+            &:hover {
+                border: 4px dashed #b6b6b6;
+            }
+
+            &.image-uploaded {
+            	padding: 0%;
+            	img {
+            		width: 100%;
+
+            	}
+            	&:hover {
+                border: 4px dashed transparent;
+            }
+            }
+        }
+    }
+    #upload-options {
+        * {
+            transition: background 0.4s ease;
+        }
+        position: relative;
+        min-height: 100%;
+        background: #fff;
+        border-left: 1px solid #d6d6d6;
+        h3 {
+            text-align: center;
+        }
+        #upload-step {
+            padding: 12% 12% 0%;
+            margin-bottom: 100px;
+            ul {
+                border: 1px solid #d6d6d6;
+                border-radius: 3px;
+                margin: 30px 0px;
+                li {
+                    padding: 14px;
+                    border-bottom: 1px solid #d6d6d6;
+                    cursor: pointer;
+                    position: relative;
+                    font-weight: 400;
+                    &.selected {
+                        background: #f8f8f8;
+                        font-weight: 600;
+                        i {
+                            color: $green;
+                        }
+                    }
+                    .icon-add {
+                        position: absolute;
+                        font-size: 1.2em;
+                        top: 15px;
+                        right: 20px;
+                        color: #cdcdcd;
+                        transition: all 0.4s ease;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    &:hover {
+                        background: #f8f8f8;
+                        .icon-add {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .form-group {
+                margin: 30px 0px;
+                input {
+                    box-shadow: none;
+                    border-radius: 3px;
+                }
+            }
+
+           	#tags {
+           		.tag {
+           			display: inline-block;
+           			background: $thortful-red;
+           			color: #ffffff;
+           			margin: 5px;
+           			padding: 5px 10px;
+           			border-radius: 3px;
+
+           			i {
+           				margin-left: 5px;
+           				color: rgba(255,255,255,0.7);
+           				cursor: pointer;
+           				padding: 5px 0px;
+
+           				&:hover {
+           					color: #fff;
+           				}
+           			}
+
+           			
+           		}
+           	}
+            .upload-section {
+                display: none;
+                &.showing {
+                    display: block;
+                }
+            }
+        }
+        #upload-progress {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            padding: 12%;
+            text-align: center;
+
+           .row	{
+           	.col-sm-6 {
+           		margin: 0px;
+           		text-align: right;
+           		&:first-child {
+           			text-align: left;
+           		}
+           	}
+           	
+           }
+            button {
+                border: none;
+                background: $green;
+                border-radius: 3px;
+                i {
+                    margin-left: 10px;
+                }
+                &.disabled {
+                    opacity: 0.8;
+                    background: #cdcdcd;
+                }
+
+                &.btn-default {
+                	background: #eaeaea;
+                	color: inherit;
+                }
+            }
+        }
+    }
+}

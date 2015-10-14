@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>thortful-beason</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="upload-flow">
+            <div class="row">
+                <div id="upload-area" class="col-sm-8">
+                    <div id="upload-drop">
+                        <i class="fa fa-file-image-o"></i>
+                        <h4>Drop an image here to upload</h4>
+                        <p>Images must be at least <b>1772 x 2506px</b></p>
+                    </div>
+                </div>
+                <div id="upload-options" class="col-sm-4">
+                    <div id="upload-step">
+                        <div id="step_1" class="upload-section showing">
+                            <h4>1. Add one or more occasions</h4>
+                            <ul class="upload-options">
+                                <li>Valentines Day <span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Thinking of you<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Congratulations<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Birthday<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Anniversary<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Get well<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Thank You<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Sympathy<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Engagement<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                            </ul>
+                        </div>
+                        <div id="step_2" class="upload-section">
+                            <h4>2. Add some tags for users to easily find your card</h4>
+                            <p>Tags are optional but recommended! The more relevant your tags are, the easier it will be for people to find your card!</p>
+                            <div class="form-group form-group-lg">
+                                <input type="text" class="form-control" id="add_tag" placeholder="Start adding a tags...">
+                            </div>
+                            <div id="tags"></div>
+                        </div>
+
+                        <div id="step_3" class="upload-section">
+                            <h4>3. Select the target audience for the card</h4>
+                           
+                             <ul class="upload-options">
+                                <li>Male <span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                <li>Female<span class="icon-add"><i class="fa fa-plus"></i></span></li>
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div id="upload-progress">
+                    <div class="row">
+                        <div class="col-sm-6"><button id="prev_btn" class="btn btn-default btn-lg">back</button></div>
+                        <div class="col-sm-6">
+                            <button id="next_btn" class="btn btn-primary btn-lg disabled">next <i class="fa fa-long-arrow-right"></i></button>
+                        </div>
+                    </div>
+                       
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor.js"></script>
+    <script type="text/javascript" src="scripts/func.js"></script>
+</body>
+
+</html>
