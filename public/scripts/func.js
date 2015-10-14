@@ -33,6 +33,8 @@ $('#next_btn').on('click', function() {
     	$('#next_btn').text('confirm').addClass('end');
     }
 
+    $('.dot').removeClass('selected').eq(elem_no - 1).addClass('selected')
+
 	$('#prev_btn').show();
 
 });
@@ -52,6 +54,7 @@ $('#prev_btn').on('click', function() {
     	$('#prev_btn').hide();
     }
 	
+    $('.dot').removeClass('selected').eq(elem_no - 1).addClass('selected')
 
 });
 
